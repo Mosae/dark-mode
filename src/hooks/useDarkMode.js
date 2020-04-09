@@ -10,8 +10,8 @@ const useDarkMode = (key) => {
 		if (enableDarkMode) {
 			bodyElement.classList.add(className);
 		} else {
-			return;
-			// bodyElement.className.remove(className);
+			//document.querySelector('body')
+			bodyElement.classList.remove(className);
 		}
 	}, [enableDarkMode]);
 	return [enableDarkMode, setEnableDarkMode];
